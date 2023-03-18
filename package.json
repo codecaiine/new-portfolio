@@ -1,14 +1,17 @@
 {
-  "name": "new-portfolio",
+  "name": "codecaine-website",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "prettier -write .",
+    "lint": "next lint"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Yannick-Noel Aka<codecaiine>",
+  "license": "MIT",
   "dependencies": {
     "@chakra-ui/react": "^2.5.2",
     "@emotion/react": "^11.10.6",

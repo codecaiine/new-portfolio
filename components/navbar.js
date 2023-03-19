@@ -1,6 +1,6 @@
-import { forwardRef } from 'react'
-import Logo from './logo'
-import NextLink from 'next/link'
+import { forwardRef } from 'react';
+import Logo from './logo';
+import NextLink from 'next/link';
 import {
   Container,
   Box,
@@ -14,10 +14,10 @@ import {
   MenuButton,
   IconButton,
   useColorModeValue
-} from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+} from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import ThemeToggleButton from './theme-toggle-button';
+import { IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5';
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -77,16 +77,19 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/works" path={path}>
-            Works
+          
+          <LinkItem href="/experience" path={path}>
+            Experience
           </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
+          <LinkItem href="/projects" path={path}>
+            Projects
           </LinkItem>
-          <LinkItem href="https://uses.craftz.dog/">Uses</LinkItem>
+          <LinkItem href="/blog" path={path}>
+            Blog
+          </LinkItem>
           <LinkItem
             target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
+            href="https://github.com/codecaiine"
             path={path}
             display="inline-flex"
             alignItems="center"
@@ -94,7 +97,19 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
-            Source
+            Github
+          </LinkItem>
+          <LinkItem
+            target="_blank"
+            href="https://www.linkedin.com/in/yannick-no%C3%ABl-aka/"
+            path={path}
+            display="inline-flex"
+            alignItems="center"
+            style={{ gap: 4 }}
+            pl={2}
+          >
+            <IoLogoLinkedin />
+            LinkedIn
           </LinkItem>
         </Stack>
 
@@ -113,11 +128,11 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/">
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/works">
-                  Works
+                <MenuItem as={MenuLink} href="/projects">
+                  Projects
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
+                <MenuItem as={MenuLink} href="/blog">
+                  Blog
                 </MenuItem>
                 <MenuItem as={MenuLink} href="https://uses.craftz.dog/">
                   Uses

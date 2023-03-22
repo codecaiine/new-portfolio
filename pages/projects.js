@@ -4,9 +4,9 @@ import Section from '../components/section'
 import { ProjectGridItem } from '../components/grid-item'
 import projectDatas from '../data/projectdata'
 
-import thumbMargelo from '../public/images/projects/margelo_eyecatch.png'
-import thumbModeTokyo from '../public/images/projects/modetokyo_eyecatch.png'
-import thumbStyly from '../public/images/projects/styly_eyecatch.png'
+import thumbMargelo from '../public/images/projects/cottonbro.jpg'
+import thumbModeTokyo from '../public/images/projects/cottonbro.jpg'
+import thumbStyly from '../public/images/projects/cottonbro.jpg'
 
 const Projects = () => (
   <Layout title="Projects">

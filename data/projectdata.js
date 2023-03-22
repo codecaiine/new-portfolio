@@ -1,4 +1,4 @@
-import thumbInkdrop from '../public/images/projects/inkdrop_eyecatch.png';
+import thumbInkdrop from '../public/images/projects/cottonbro.jpg';
 
 const projectDatas = [
 {

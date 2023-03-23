@@ -14,16 +14,16 @@ const Blog = () => (
 
       <Section delay={0.1}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
-        {blogPosts.map((post) => {
+        {blogPosts.map((post) => (
         
         <GridItem
-        title="How to build a portfolio website"
-        thumbnail={aaaa}
-        href="https://www.youtube.com/watch?v=bSMZgXzC9AA"
+        title={post.title}
+        thumbnail={post.thumbnail}
+        href={post.url}
       />
 
 
-        })}
+        ))}
   
         </SimpleGrid>
       </Section>

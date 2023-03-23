@@ -5,7 +5,7 @@ const projectDatas = [
     
     id: 'technicalement',
     title: 'Technicalement',
-    thumbnail:'',
+    thumbnail: thumbInkdrop,
     description: 'AHRQ advances excellence in healthcare by producing evidence to make healthcare safer, highe',
     category: 'personal'
 },

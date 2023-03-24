@@ -87,6 +87,10 @@ const Navbar = props => {
           <LinkItem href="/blog" path={path}>
             Blog
           </LinkItem>
+          <LinkItem href="/contact" path={path}>
+            Contact
+          </LinkItem>
+
           <LinkItem
             target="_blank"
             href="https://github.com/codecaiine"

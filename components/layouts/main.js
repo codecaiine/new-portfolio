@@ -3,6 +3,7 @@ import dynamic from 'next/dynamic';
 import NavBar from '../navbar';
 import { Box, Container } from '@chakra-ui/react';
 import Footer from '../footer';
+import MyHeading from '../my-heading';
 
 
 const Main = ({ children, router }) => {
@@ -30,6 +31,7 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
+        <MyHeading/>
 
         {children}
 

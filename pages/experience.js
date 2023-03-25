@@ -7,7 +7,7 @@ import {
   Button,
   chakra
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { EmailIcon } from '@chakra-ui/icons'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
@@ -24,22 +24,20 @@ const Experience = () => (
         Experience
         </Heading>
         <BioSection>
-          <BioYear>1984</BioYear>
-          Born in Osaka (大阪), Japan.
+          <BioYear>2028</BioYear>
+          Full-stack Software Engineer
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Completed the Master&apos;s Program in the Graduate School of
-          Information Science at Nara Institute of Science and Technology
-          (奈良先端科学技術大学院大学情報科学研究科修士課程)
+          <BioYear>2028</BioYear>
+          Full-stack Software Engineer
         </BioSection>
         <BioSection>
-          <BioYear>2010</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
+          <BioYear>2028</BioYear>
+          Full-stack Software Engineer
         </BioSection>
         <BioSection>
-          <BioYear>2012 to present</BioYear>
-          Working as a freelancer
+          <BioYear>2028</BioYear>
+          Full-stack Software Engineer
         </BioSection>
       </Section>
 
@@ -47,21 +45,33 @@ const Experience = () => (
         <Heading as="h3" variant="section-title">
           Education
         </Heading>
-        <Box align="center" my={4}>
+       
+        <BioSection>
+          <BioYear>2028</BioYear>
+          Full-stack Software Engineer
+        </BioSection>
+
+        <BioSection>
+          <BioYear>2028</BioYear>
+          Full-stack Software Engineer
+        </BioSection>
+
+        <Box align="center" my={10}>
           <Button
             as={NextLink}
-            href="/projects"
+            href="#"
             scroll={false}
-            rightIcon={<ChevronRightIcon />}
+            leftIcon={<EmailIcon />}
             colorScheme="teal"
           >
-            My portfolio
+            Get my resume here
           </Button>
         </Box>
       </Section>
+      
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
-        Licenses & certifications
+        Achievements
         </Heading>
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
@@ -80,26 +90,6 @@ const Experience = () => (
             A Markdown note-taking app
           </GridItem>
         </SimpleGrid>
-
-        <Heading as="h3" variant="section-title">
-          Newsletter
-        </Heading>
-        <p>
-          Join me on a behind-the-scenes coding journey. Weekly updates on
-          projects, tutorials, and videos
-        </p>
-
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="https://www.devas.life/"
-            scroll={false}
-            leftIcon={<EmailIcon />}
-            colorScheme="teal"
-          >
-            Sign up my newsletter here
-          </Button>
-        </Box>
       </Section>
     </Container>
   </Layout>

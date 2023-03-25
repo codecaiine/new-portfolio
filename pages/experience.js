@@ -76,14 +76,14 @@ const Experience = () => (
 
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            href="https://www.youtube.com/devaslife"
+            href="#"
             title="Dev as Life"
             thumbnail={thumbYouTube}
           >
             My YouTube channel (&gt;150k subs)
           </GridItem>
           <GridItem
-            href="https://www.inkdrop.app/"
+            href="#"
             title="Inkdrop"
             thumbnail={thumbInkdrop}
           >

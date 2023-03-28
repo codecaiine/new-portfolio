@@ -12,8 +12,8 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
-import thumbYouTube from '../public/images/takuya.jpg'
-import thumbInkdrop from '../public/images/takuya.jpg'
+import thumbYouTube from '../public/images/profile-yann.png'
+import thumbInkdrop from '../public/images/profile-yann.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -58,7 +58,7 @@ const Home = () => (
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/takuya.jpg"
+              src="/images/profile-yann.png"
               alt="Profile image"
               borderRadius="full"
               width="100"
